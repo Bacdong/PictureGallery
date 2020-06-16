@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyeonji | Kho ảnh</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"/>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!--<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+</head>
+<body onload="showImage(); showAdminLogin();">
+    <div class="top">
+        <div class="top-logo">
+            <img src="img/logo/logo.png">
+        </div>
+
+        <div class="top-auth">
+            <div class="auth-img">
+                <img src="img/avatar/avatar.jpg">
+            </div>
+
+            <div id="auth-name" class="auth-name">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header-cover-img">
+            <div class="header-avatar">
+                <div class="header-avatar__avatar">
+                    <img src="img/avatar/avatar.jpg" alt="This is my avatar.">
+                </div>
+                <div class="header-avatar__render-avatar">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+
+            <div class="header-action">
+                <div class="header-avatar__activity">
+                    <span>
+                        <i class="fab fa-accusoft"></i>
+                        Nhật ký truy cập
+                    </span>
+                </div>
+    
+                <div class="header-avatar__render-cover-img">
+                    <span>
+                        <i class="fas fa-camera"></i>
+                        Cập nhật ảnh bìa
+                    </span>
+                </div>
+            </div> 
+        </div>
+
+        <div class="header-name">
+            <div class="header-name-box">
+                <div class="header-name-box__container">
+                    <div class="header-name-box__container-box">
+                        <div id="header-name-box__name">Pyeonji</div>
+                        <div class="header-name-box__name-link">
+                            <span id="header-name-box__span-story">Giới thiệu bản thân</span> <br />
+                            <div class="header-name-box__name-linked">
+                                <a href="" class="header-name-box__edit">Chỉnh sửa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-list">
+            <div class="header-list__menu">
+                <ul class="header-list__list">
+                    <li class="header-list__item item1">
+                        <a class="header-list__item-link" href="index.html">Dòng thời gian</a>
+                    </li>
+                    <li class="header-list__item item2">
+                        <a class="header-list__item-link" href="https://www.facebook.com/HuynhAnhThu.2000" target="_blank">Giới thiệu</a>
+                    </li>
+                    <li class="header-list__item item3">
+                        <a class="header-list__item-link" href="index.html?render&0">Tải ảnh lên</a>
+                    </li>
+                    <li class="header-list__item item4">
+                        <a class="header-list__item-link" href="http://bacdong.000webhostapp.com/" target="_blank">Đến trang bí ẩn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-img">
+            <div class="container-img__title-img">
+                <div class="img__title">
+                    <span class="container-img__title">Ảnh</span>
+                </div>
+
+                <div class="img__render">
+                    <button title="Tải ảnh lên" class="render-img" type="button">+</button>
+                </div>
+            </div>
+
+            <div class="container-img__title-img title-img">
+                <span class="container-img__title title-img__title">Ảnh của bạn</span>
+            </div>
+            
+            <div id="container-img__list">
+
+            </div>
+            
+            <div class="container-pageNumber">
+                <div id="container-img__pageNumber">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="container-imgFull" class="container-imgFull__modal" onClick="closeImage();">
+            <div id="container-imgFull__show">
+                <button title="Đóng hình ảnh." type="button" class="close" onClick="closeImage();">x</button>
+                <div class="container-imgFull__img">
+                    <img src="" id="container-imgFull__img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>2020 &#169; Copyright and design by Bacdong. All rights reserved.</p>
+    </div>
+    <script src="assets/JS/javascript.js"></script>
+</body>
+</html>

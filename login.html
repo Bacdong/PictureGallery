@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pyeonji | Đăng nhập</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"/>
+        <link rel="stylesheet" href="assets/CSS/login.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+    </head>
+<body>
+    <section class="body">
+        <div class="form">
+            <div class="form-title-box">
+                <h2 class="title">ĐĂNG NHẬP</h2>
+            </div>
+
+            <div class="form-input">
+                <label class="title-input">Tên đăng nhập:</label>
+                <input title="Nhập vào tên tài khoản mà bạn đã được cung cấp" id="input" type="text" placeholder="Username"/>
+                <label class="error" id="error1">Tên đăng nhập chưa chính xác</label>
+                <label class="title-input">Mật khẩu:</label>
+                <input title="Nhập vào mật khẩu mà bạn đã được cung cấp" id="password" type="password" placeholder="Password"/>
+                <label class="error" id="error2">Mật khẩu chưa chính xác!</label>
+                <button type="button" onClick="login();">ĐĂNG NHẬP</button>
+                <label class="title-input footer" id="output">*Lưu ý: Trang này không hỗ trợ tạo tài khoản!</label>
+            </div>
+
+            <div class="form-footer">
+                <p>2020 &#169; Copyright by Bacdong.</p>
+            </div>
+        </div>
+    </section>
+    <script src="assets/JS/javascript.js"></script>
+</body>
+</html>
